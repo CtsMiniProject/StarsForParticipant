@@ -9,6 +9,7 @@ import javax.validation.constraints.Size;
 @Entity
 public class Trainee {
 	@Id
+
 	private int traineeId;
 	@NotNull
 	@Size(min = 4, max = 50, message = "length Should be in between 4-50 ")

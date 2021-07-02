@@ -26,4 +26,9 @@ public class Trainer {
 		this.skillSet = skillSet;
 	}
 
+	@Override
+	public String toString() {
+		return "Trainer [trainee=" + trainee + ", skillSet=" + skillSet + "]";
+	}
+
 }
