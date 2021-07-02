@@ -3,9 +3,9 @@ package com.starts.Model;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Entity;
+import org.springframework.stereotype.Component;
 
-@Entity
+@Component
 public class Trainer {
 	private Trainee trainee;
 	List<String> skillSet = new ArrayList<>();

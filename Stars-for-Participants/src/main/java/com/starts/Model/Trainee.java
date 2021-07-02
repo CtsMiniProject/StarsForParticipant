@@ -1,15 +1,13 @@
 package com.starts.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-@Entity
-public class Trainee {
-	@Id
+import org.springframework.stereotype.Component;
 
+@Component
+public class Trainee {
 	private int traineeId;
 	@NotNull
 	@Size(min = 4, max = 50, message = "length Should be in between 4-50 ")
