@@ -5,16 +5,16 @@ import javax.persistence.Id;
 import javax.validation.constraints.Pattern;
 
 @Entity
-public class Admin {
+public class Users {
 	@Id
-	private int adminId;
+	private int userId;
 	@Pattern(regexp = "^(?=.{6,}$)(?=.\\W).$", message = "Should have atleast 1 special character and be minimum of 6 characters")
 	private String password;
-	public int getAdminId() {
-		return adminId;
+	public int getUserId() {
+		return userId;
 	}
-	public void setAdminId(int adminId) {
-		this.adminId = adminId;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 	public String getPassword() {
 		return password;
@@ -24,7 +24,7 @@ public class Admin {
 	}
 	@Override
 	public String toString() {
-		return "Admin [adminId=" + adminId + ", password=" + password + "]";
+		return "Users [userId=" + userId + ", password=" + password + "]";
 	}
 
 }
